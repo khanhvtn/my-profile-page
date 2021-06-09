@@ -5,7 +5,9 @@
     "main": "index.tsx",
     "scripts": {
         "start": "webpack server --config webpack.dev.js",
-        "build": "export NODE_ENV=production && webpack --config webpack.prod.js"
+        "build": "export NODE_ENV=production && webpack --config webpack.prod.js",
+        "predeploy": "npm run build",
+        "deploy": "npx gh-pages -d build"
     },
     "repository": {
         "type": "git",
