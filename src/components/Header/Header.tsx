@@ -42,45 +42,41 @@ const Header: FunctionComponent<Props> = () => {
             </div>
             {/* Contact */}
             <div className="flex flex-col items-end z-20 gap-y-3 pt-5">
-                <div className="text-white text-lg inline-flex items-center gap-3 font-extralight cursor-pointer  transform hover:scale-110 transition duration-300">
+                <div className="relative text-white text-lg inline-flex items-center gap-3 font-extralight cursor-pointer  transform hover:scale-110 transition duration-300">
                     <a
                         href="https://www.facebook.com/leekhanh1993"
                         target="blank"
-                        className="text-white"
-                    >
-                        fb.com/leekhnh1993
-                    </a>
+                        className="text-white absolute w-full h-full top-0 left-0"
+                    />
+                    <a className="text-white">fb.com/leekhnh1993</a>
                     <AiFillFacebook size="30px" />
                 </div>
-                <div className="text-white text-lg inline-flex items-center gap-3 font-extralight cursor-pointer transform hover:scale-110 transition duration-300">
+                <div className="relative text-white text-lg inline-flex items-center gap-3 font-extralight cursor-pointer transform hover:scale-110 transition duration-300">
                     <a
                         href="https://github.com/khanhvtn"
                         target="blank"
-                        className="text-white"
-                    >
-                        github.com/khanhvtn
-                    </a>
+                        className="text-white absolute w-full h-full top-0 left-0"
+                    />
+                    <a className="text-white">github.com/khanhvtn</a>
                     <AiFillGithub size="30px" />
                 </div>
 
-                <div className="text-white text-lg inline-flex items-center gap-3 font-extralight cursor-pointer transform hover:scale-110 transition duration-300">
+                <div className="relative text-white text-lg inline-flex items-center gap-3 font-extralight cursor-pointer transform hover:scale-110 transition duration-300">
                     <a
                         href="https://www.linkedin.com/in/khanhvtn/"
                         target="blank"
-                        className="text-white"
-                    >
-                        linkedin.com/in/khanhvtn
-                    </a>
+                        className="text-white absolute w-full h-full top-0 left-0"
+                    />
+                    <a className="text-white">linkedin.com/in/khanhvtn</a>
                     <AiFillLinkedin size="30px" />
                 </div>
-                <div className="text-white text-lg inline-flex items-center gap-3 font-extralight cursor-pointer transform hover:scale-110 transition duration-300">
+                <div className="text-white text-lg inline-flex items-center gap-3 font-extralight cursor-pointer transform hover:scale-110 transition duration-300 relative">
                     <a
                         href="mailto:khanhvotrannhut93@gmail.com"
                         target="blank"
-                        className="text-white"
-                    >
-                        khanhvotrannhut93@gmail.com
-                    </a>
+                        className="text-white absolute w-full h-full top-0 left-0"
+                    />
+                    <a className="text-white">khanhvotrannhut93@gmail.com</a>
                     <AiFillMail size="30px" />
                 </div>
             </div>
