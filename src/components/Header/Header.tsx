@@ -1,6 +1,11 @@
 import React, { FunctionComponent, useEffect, useState } from 'react';
 import classNames from 'classnames';
-import { AiFillFacebook, AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import {
+    AiFillFacebook,
+    AiFillGithub,
+    AiFillLinkedin,
+    AiFillMail,
+} from 'react-icons/ai';
 
 type Props = {};
 
@@ -67,6 +72,16 @@ const Header: FunctionComponent<Props> = () => {
                         linkedin.com/in/khanhvtn
                     </a>
                     <AiFillLinkedin size="30px" />
+                </div>
+                <div className="text-white text-lg inline-flex items-center gap-3 font-extralight cursor-pointer transform hover:scale-110 transition duration-300">
+                    <a
+                        href="mailto:khanhvotrannhut93@gmail.com"
+                        target="blank"
+                        className="text-white"
+                    >
+                        khanhvotrannhut93@gmail.com
+                    </a>
+                    <AiFillMail size="30px" />
                 </div>
             </div>
         </div>
