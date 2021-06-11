@@ -27,7 +27,7 @@ const App: FunctionComponent = () => {
                 <div className="mt-20 w-full h-32"></div>
             </div>
             {/* Footer */}
-            <Footer/>
+            <Footer />
         </div>
     );
 };

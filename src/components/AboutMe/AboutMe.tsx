@@ -6,9 +6,11 @@ const AboutMe: FunctionComponent<Props> = () => {
     return (
         <div className="w-full flex flex-col items-center my-36 px-10">
             <div className="mb-10 border-b-2 border-black px-5">
-                <p className="text-4xl font-mono uppercase">About Me</p>
+                <p className="lg:text-4xl md:text-2xl font-mono uppercase">
+                    About Me
+                </p>
             </div>
-            <p className="text-2xl text-center font-light italic">
+            <p className="lg:text-2xl md:text-xl text-center font-light italic">
                 Hi guys, I am a full-stack web developer with hands-on
                 experience in all levels of web development from my school and
                 side projects, including performance, functional, integration,

@@ -11,7 +11,10 @@ const WorkExperience: FunctionComponent<Props> = () => {
             const renderListDescription = workEx.listDescription.map(
                 (desc, index) => {
                     return (
-                        <li key={index} className="text-xl font-light">
+                        <li
+                            key={index}
+                            className="lg:text-xl md:text-lg font-light"
+                        >
                             {desc}
                         </li>
                     );
@@ -22,7 +25,7 @@ const WorkExperience: FunctionComponent<Props> = () => {
                     return (
                         <img
                             key={index}
-                            className="h-14"
+                            className="h-10"
                             src={
                                 require(`../../images/${logo}-logo.png`).default
                             }
@@ -40,8 +43,12 @@ const WorkExperience: FunctionComponent<Props> = () => {
                     )}
                 >
                     <div className="content">
-                        <p className="text-2xl font-bold">{workEx.year}</p>
-                        <p className="text-xl font-medium">{workEx.name}</p>
+                        <p className="lg:text-2xl md:text-xl font-bold">
+                            {workEx.year}
+                        </p>
+                        <p className="lg:text-xl md:text-lg font-medium">
+                            {workEx.name}
+                        </p>
                         {/*  List description */}
                         <div>
                             <ul className="list-disc list-inside">
@@ -49,7 +56,7 @@ const WorkExperience: FunctionComponent<Props> = () => {
                             </ul>
                         </div>
                         {/* List technology */}
-                        <div className="w-full flex items-center justify-center gap-x-10 mt-10">
+                        <div className="w-full flex flex-wrap items-center justify-center gap-10 mt-10">
                             {renderListTechnology}
                         </div>
                     </div>
@@ -59,7 +66,9 @@ const WorkExperience: FunctionComponent<Props> = () => {
     return (
         <div className="w-full flex flex-col items-center my-36 px-10">
             <div className="mb-10 border-b-2 border-black px-5">
-                <p className="text-4xl font-mono uppercase">WORK EXPERIENCE</p>
+                <p className="lg:text-4xl md:text-2xl font-mono uppercase">
+                    WORK EXPERIENCE
+                </p>
             </div>
 
             <div className="w-full">

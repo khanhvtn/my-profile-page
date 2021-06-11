@@ -11,7 +11,10 @@ const EducationHistory: FunctionComponent<Props> = () => {
             const renderListActivities = educationHistory.activities.map(
                 (activity, index) => {
                     return (
-                        <li key={index} className="text-xl font-light">
+                        <li
+                            key={index}
+                            className="lg:text-2xl md:text-xl font-light"
+                        >
                             {activity}
                         </li>
                     );
@@ -26,11 +29,11 @@ const EducationHistory: FunctionComponent<Props> = () => {
                     )}
                 >
                     <div className="content">
-                        <p className="text-2xl font-bold">
+                        <p className="lg:text-2xl md:text-xl font-bold">
                             {educationHistory.schoolName},
                             {educationHistory.graduateYear}
                         </p>
-                        <p className="text-xl font-medium">
+                        <p className="lg:text-xl md:text-lg font-medium">
                             {educationHistory.major}
                         </p>
                         {/* List Activities */}
@@ -46,7 +49,7 @@ const EducationHistory: FunctionComponent<Props> = () => {
     return (
         <div className="w-full flex flex-col items-center my-36 px-10">
             <div className="mb-10 border-b-2 border-black px-5">
-                <p className="text-4xl font-mono uppercase">
+                <p className="lg:text-4xl md:text-2xl font-mono uppercase">
                     EDUCATION HISTORY
                 </p>
             </div>
