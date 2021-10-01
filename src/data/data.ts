@@ -73,4 +73,15 @@ export const listWorkEx: WorkExperience[] = [
         ],
         listTechnology: ['java', 'android', 'firebase'],
     },
+    {
+        name: 'Event Supporter - NetCompany',
+        year: 2021,
+        listDescription: [
+            'Build front-end with React and Redux',
+            'Create back-end with ExpressJS',
+            'Use MongoDB and Firebase for database',
+            'Use Docker and Heroku for deployment'
+        ],
+        listTechnology: ['react', 'redux', 'express', 'mongodb','firebase', 'heroku'],
+    },
 ];
